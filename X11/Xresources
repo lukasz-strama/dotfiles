@@ -1,0 +1,38 @@
+UXTerm.termName:			xterm-256color
+UXTerm.vt100.locale:			true
+
+! Make 'Alt' key behave as on other terminal emulators
+UXTerm.vt100.metaSendsEscape:		true
+
+! Fix the backspace key
+UXTerm.vt100.backarrowKey:		false
+UXTerm.ttyModes:			erase ^?
+
+! Scrolling
+UXTerm.vt100.saveLines:			4096
+
+! Scrollbar
+UXTerm.vt100.scrollBar:			false
+
+! Clipboard
+UXTerm.vt100.selectToClipboard: 	true
+<Btn1Up>: 				select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+Ctrl Shift <Key>C: 			copy-selection(CLIPBOARD) \n\
+Ctrl Shift <Key>V: 			insert-selection(CLIPBOARD)
+
+! Colors
+UXTerm.vt100.foreground: 		white
+UXTerm.vt100.background: 		black
+
+! CJK Fonts
+UXTerm.vt100.faceName: 			IosevkaTerm Nerd Font:style=Regular:antialias=true
+UXTerm.vt100.faceNameDoublesize:	WenQuanYi WenQuanYi Bitmap Song
+UXTerm.vt100.faceSize:			12
+UXterm.vt100.renderFont:		true
+
+! Enable bell urgency
+UXTerm.vt100.bellIsUrgent:		true
+
+! Cursor
+UXTerm.vt100.cursorBlink:		true
+UXTerm.vt100.cursorUnderLine:		true
